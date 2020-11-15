@@ -1,6 +1,6 @@
 {
   "name": "silver-class",
-  "version": "1.0.0",
+  "version": "0.2.1",
   "description": "Changes the class names according to the specified breakpoints.",
   "author": "oktaykose",
   "license": "MIT",

@@ -4,7 +4,13 @@
 
 [![NPM](https://img.shields.io/npm/v/silver-class.svg)](https://www.npmjs.com/package/silver-class) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
->xs, extra-small: 0px / sm, small: 600px / md, medium: 960px / lg, large: 1280px / xl, extra-large: 1920px 
+```txt
+xs, extra-small: 0px  
+sm, small: 600px 
+md, medium: 960px 
+lg, large: 1280px 
+xl, extra-large: 1920px 
+```
 
 ## Install
 
@@ -16,7 +22,7 @@ npm install --save silver-class
 
 ```jsx
 import React from 'react'
-import sCls from 'silver-class'
+import { sCls } from 'silver-class'
 
 export const Example = () => { 
     return (
