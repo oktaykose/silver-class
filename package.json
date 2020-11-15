@@ -1,13 +1,20 @@
 {
   "name": "silver-class",
   "version": "1.0.0",
-  "description": "Made with create-react-library",
+  "description": "Changes the class names according to the specified breakpoints.",
   "author": "oktaykose",
   "license": "MIT",
   "repository": "oktaykose/silver-class",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
+  "keywords": [
+    "class",
+    "className",
+    "breakpoint",
+    "breakpoints",
+    "class modifier"
+  ],
   "engines": {
     "node": ">=10"
   },
