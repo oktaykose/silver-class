@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from 'react'
+import {useLayoutEffect, useState} from 'react'
 
 let breakpoints = {
   xs: 0,
@@ -21,6 +21,18 @@ const getBreakpoints = (windowSize) => {
           : "xl";
 };
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+export const sCls = (classBreakpoints) => {
+  const [cssClass, setCssClass] = useState('');
+
+  useLayoutEffect(() => {
+    const reSize = () => {
+      let windowSize = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth || 0;
+      setCssClass(classBreakpoints[getBreakpoints(windowSize)] || "");
+    }
+    window.addEventListener('resize', () => reSize());
+    reSize();
+    return () => window.removeEventListener('resize', () => reSize());
+  });
+
+  return cssClass;
+};
